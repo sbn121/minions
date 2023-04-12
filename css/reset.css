@@ -4,7 +4,7 @@
 }
 
 ul, ol {
-    list-style: 0;
+    list-style: none;
 }
 
 form, fieldset {
@@ -19,4 +19,6 @@ a, a:link {
     text-decoration: none;
     color: inherit;
 }
-
+.d-none {
+    display: none;
+}

@@ -3,3 +3,150 @@
 body {
     font-family: "Maven Pro", "Noto Sans KR", sans-serif;
 }
+/* body::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #f9c02d;
+    position: fixed;
+    left: 0;
+    top: 206px;                  header-top 높이가 210px이니까
+}
+.header-wrap {
+    max-width: 1190px;     네이버, 다음 웹서비스의 컨텐츠 영역
+    margin: 0 auto;
+} */
+.header-top {
+    width: 100%;     /*블럭요소의 기본 폭*/
+    position: relative;
+    height: 210px;
+    margin: 0 auto;
+}
+.links {
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+.links a {
+    font-size: 0.875rem;
+    color: #666;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+}
+.links a:hover {
+    color: #000;
+}
+.links a::after {
+    content: "|";
+    margin: 0 10px;
+}
+.links a:nth-last-child(1)::after {
+    content: '';
+    margin: 0;
+}
+.main-logo {
+    position: absolute;
+    left: 50%;
+    bottom: 0; 
+    margin-left: -150px;
+}
+.sns {
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+nav {
+    border-top: 2px solid #f9c02d;
+    position: relative;
+    top:-4px;
+}
+#gnb {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+#gnb li {
+    display: inline-block;
+    margin: 0 10px;
+}
+#gnb li a {
+    font-size: 1.125rem;
+    color: #f9c02d;
+    font-weight: 700;         /*100~900 단위 없는 숫자 값, thin, bold, bolder*/
+    transition: all .4s ease-in-out;      /*ease-in-out:가속도*/
+}
+#gnb li a:hover {
+    color: #000;
+}
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+#movie {
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main-character {
+    position: absolute;
+    left: 50%;
+    margin-left: -189px;
+    bottom: -140px;              /*영상 경계 아래, 다리~엉덩이 사이 위치*/
+}
+.article-title {
+    text-align: center;
+    margin: 150px 0 20px 0;
+    font-size: 30px;
+    color: #f9c02d;
+    font-weight: 900;
+    text-transform: capitalize;       /*텍스트 변형-첫글자 대문자*/
+}
+.chars {
+    max-width: 927px;
+    margin: 0 auto;
+    font-size: 0;
+    overflow: hidden;            /*side effect*/
+}
+.chars li {
+    float: left;
+}
+.chars li img{
+    border: 1px solid #f9c02d;
+}
+aside {
+    background: #f9c02d;
+}
+.event {
+    max-width: 920px;
+    margin: 100px auto;
+}
+.footer-wrap {
+    max-width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+.extra-links li{
+    display: inline-block;
+    position: relative;
+}
+.extra-links li a {
+    font-size: 0.9375rem;
+    color: #888;
+    transform:all .4s ease-in-out ;
+}
+.extra-links li a:hover {
+    color: #000;
+}
+.copyright {
+    font-size: 0.6875rem;
+    color: #888;
+}
+.sub-logo {
+    position: absolute;
+    right: 0;
+    top:0;
+}
